@@ -1,0 +1,102 @@
+
+h1
+{
+    text-align: center;
+}
+
+.border-box {
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}
+
+
+#calendar {
+    float:left;
+    display:block;
+    background:white;
+    width: 100%;
+    border:solid 1px #00ff33;
+    margin-bottom:10px;
+    display:table;
+}
+#calendar>div.header {
+    float:left;
+    width:100%;
+    background:#00ff33;
+    height:40px;
+    color:white;
+    display:inline-block;
+}
+#calendar>div.header>i {
+    float:left;
+    width:40px;
+    height: 40px;
+    font-size:1.125em;
+    font-weight:bold;
+    padding:0 10px;
+    cursor:pointer;
+}
+#calendar>div.header>i.fa-angle-left {
+    text-align:left;
+}
+
+#calendar>div.header>i.fa-angle-right {
+    text-align:right;
+    margin-left:40px;
+}
+
+#calendar>div.header>span {
+    width:100%;
+    font-weight:bold;
+    text-transform:uppercase;
+    padding-left:40px;
+    margin-left:40px;
+    text-align:center;
+    padding-right:40px;
+    color:inherit;
+    display:table-caption;
+}
+#calendar>div.week {
+    float:left;
+    width:100%;
+    border-top:solid 1px #00ff33;
+    display:table-row;
+}        
+#calendar>div.week:first-child {
+    border-top:none;
+}
+
+#calendar>span.day {
+    float:left;
+    width:100%;
+    border-left:solid 1px #00ff33;
+    font-size:0.75em;
+    text-align:center;
+    background:white;
+    cursor:pointer;
+    color:black;
+   
+}            
+#calendar>span.day:first-child {
+    border-left:none;
+}
+
+.today {
+    background:#00cc66;
+}
+
+.different-month {
+    color:#00ff33;
+}
+
+.selected {
+    background:#006600;
+    color:white;
+}
+.day {
+    color:#006600;
+    font-weight:bold;
+    width: 100px;
+    padding:10px;
+     display: table-cell;
+}
